@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Custom CSS sheet link -->
+    <link rel="stylesheet" href="./CSS Sheets/style.css">
+    <!-- JS script link -->
+    <script src="signUp.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container-fluid text-start">
+        <div class="row g-0">
+            <div class="col bgLogin">
+                <div class="container centerDiv">
+                    <h4>Welcome To Login</h1>
+                        <form name="myForm" onsubmit="return validateForm()" method="post">
+                            <label for="email">Email: </label>
+                            <div class="formdesign" id="email">
+                                <input type="email" name="femail" required> <br /><span class="formerror"> </span>
+                            </div>
+                            <label for="password">Password: </label>
+                            <div class="formdesign" id="pass">
+                                <input type="password" id="passLogin" name="fpass" required> <br /><span class="formerror"></span>
+                            </div>
+                            <input class="mt-2 mb-2" type="checkbox" onclick="passwordToggle()"> <span>Show Password</span>
+                        <br/>
+                            <input class="btn btn-primary mt-2" type="submit" value="Submit">
+                        </form>
+                        <p class="mt-2">Don't have a account. Please register. <span><a href="signUp.html">Sign Up</a></span></p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/loginImg.jpg" class="img-fluid" alt="...">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
