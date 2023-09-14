@@ -14,7 +14,7 @@
     <!-- Custom CSS sheet link -->
     <link rel="stylesheet" href="./CSS Sheets/style.css">
     <!-- JS script link -->
-    <script src="script.js"></script>
+    <script src="./Javascript File/scriptLogin.js"></script>
     <title>Login</title>
 </head>
 
@@ -24,14 +24,14 @@
             <div class="col bgLogin">
                 <div class="container centerDiv">
                     <h4>Welcome To Login</h1>
-                        <form name="myForm" onsubmit="return validateForm()" method="post">
+                        <form action="" name="myForm" onsubmit="return validateLoginForm()" method="get">
                             <label for="email">Email: </label>
                             <div class="formdesign" id="email">
-                                <input type="email" name="femail" required> <br /><span class="formerror"> </span>
+                                <input type="email" name="emailLogin" required> <br /><span class="formerror"> </span>
                             </div>
                             <label for="password">Password: </label>
                             <div class="formdesign" id="pass">
-                                <input type="password" id="passLogin" name="fpass" required> <br /><span class="formerror"></span>
+                                <input type="password" name="passLogin" required> <br /><span class="formerror"></span>
                             </div>
                             <input class="mt-2 mb-2" type="checkbox" onclick="passwordToggle()"> <span>Show Password</span>
                         <br/>
