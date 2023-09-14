@@ -24,38 +24,50 @@
             <div class="col bgLogin">
                 <div class="container centerDiv">
                     <h4>Welcome To Sign Up</h1>
-                    <form action="" name="myForm" onsubmit="return validateForm()" method="post">
-                        <label for="name">Name:</label>
-                        <div class="formdesign" id="name">
-                            <input type="text" id="sname" name="fname" required> <br /><span class="formerror"> </span>
-                        </div>
-                        <label for="email">Email: </label>
+                        <form action="process_form.php" name="myForm" onsubmit="return validateForm()" method="post">
+                            <label for="name">Name:</label>
+                            <div class="formdesign" id="name">
+                                <input type="text" name="fname" required> <br /><span class="formerror"> </span>
+                            </div>
+                            <label for="email">Email: </label>
 
-                        <div class="formdesign" id="email">
-                            <input type="email" id="semail" name="femail" required> <br /><span class="formerror"> </span>
-                        </div>
-                        <label for="phone">Phone: </label>
-                        <div class="formdesign" id="phone">
-                            <input type="phone" id="semail" name="fphone" required> <br /><span class="formerror"></span>
-                        </div>
-                        <label for="image">Image: </label>
-                        <div class="mt-2 mb-2">
-                            <input type="file" id="myFile" name="filename">
-                        </div>
-                        <label for="password">Password: </label>
-                        <div class="formdesign" id="pass">
-                            <input type="password" itemid="spassword" id="password" name="fpass" required> <br /><span class="formerror"></span>
-                        </div>
-                        <input class="mt-2 mb-2" type="checkbox" onclick="passwordToggle()"> <span>Show Password</span>
-                        <br/>
-                        <label for="confirmPassord">Confirm Password: </label>
+                            <div class="formdesign" id="email">
+                                <input type="email" name="femail" required> <br /><span class="formerror"> </span>
+                            </div>
+                            <label for="phone">Phone: </label>
+                            <div class="formdesign" id="phone">
+                                <input type="phone" name="fphone" required> <br /><span class="formerror"></span>
+                            </div>
+                            <div class="text-start mb-2">
+                                <label for="image">Capture Image: </label>
+                                <br />
+                                <div class="camera">
+                                    <video id="video">Video stream not available.</video>
+                                </div>
+                                <div><button id="startbutton">Take photo</button></div>
+                                <canvas id="canvas"></canvas>
+                                <div class="output">
+                                    <img id="photo" alt="Captured Picture">
+                                </div>
+                            </div>
+                            <label for="image">Upload Image: </label>
+                            <div class="mt-2 mb-2">
+                                <input type="file" id="myFile" name="filename">
+                            </div>
+                            <label for="password">Password: </label>
+                            <div class="formdesign" id="pass">
+                                <input type="password" id="password" name="fpass" required> <br /><span class="formerror"></span>
+                            </div>
+                            <input class="mt-2 mb-2" type="checkbox" onclick="passwordToggle()"> <span>Show Password</span>
+                            <br />
+                            <label for="confirmPassord">Confirm Password: </label>
 
-                        <div class="formdesign" id="cpass">
-                            <input type="password" name="fcpass" required> <br /><span class="formerror"></span>
-                        </div>
-                        <input class="btn btn-primary mt-2" type="submit" value="Submit">
-                    </form>
-                    <p class="mt-2">Already have a account! <span><a href="login.html">Login</a></span></p>
+                            <div class="formdesign" id="cpass">
+                                <input type="password" name="fcpass" required> <br /><span class="formerror"></span>
+                            </div>
+                            <input class="btn btn-primary mt-2" type="submit" value="Submit">
+                        </form>
+                        <p class="mt-2">Already have a account! <span><a href="login.html">Login</a></span></p>
 
                 </div>
             </div>
